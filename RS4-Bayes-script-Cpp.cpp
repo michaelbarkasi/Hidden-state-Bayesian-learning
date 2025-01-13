@@ -191,7 +191,7 @@ NumericVector quat_mult ( NumericVector q1, NumericVector q2 ) {
   NumericVector qv(4); 
   q1 = normalizeV(q1);
   q2 = normalizeV(q2);
-  qv = vadd( vscaler_mult(q2,q1[3]) , vadd( vscaler_mult(q1,q2[3]) , crossp(q1,q2) ) );
+  qv = vadd( vscaler_mult(q2,q1[3]), vadd( vscaler_mult(q1,q2[3]), crossp(q1,q2) ) );
   q[3] = q1[3] * q2[3] - dotp(q1,q2); 
   q[0] = qv[0];
   q[1] = qv[1];
