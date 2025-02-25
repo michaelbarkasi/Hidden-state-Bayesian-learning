@@ -2,4 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
-RS4-Bayes-Sim.Rproj
+*.Rproj
+.*
